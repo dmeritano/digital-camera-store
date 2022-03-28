@@ -107,4 +107,8 @@ As a next step, so that the deploy is generated again, we make a new `git push o
 
 This step of creating the environment variable should have been done before the first push, so that the first deploy in Netlify would not have failed.
 
+Also, we can change production branch from "Site settings" in Netlify. 
+
+* Branches **>** <u>Control which branches</u> in your Git repository you want to deploy **>** Production branch **>** *main*
+
 
