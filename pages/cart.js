@@ -59,7 +59,7 @@ const Cart = ( {cartItems, updateQtty, deleteProduct} ) => {
                   {total > 0 ? (
                     <>
                       <h3>Order summary</h3>
-                      <p>Total a pagar: ${total}</p>
+                      <p>Total to pay: ${total}</p>
                     </>
                   ):(
                     <p>There is not items in cart</p>

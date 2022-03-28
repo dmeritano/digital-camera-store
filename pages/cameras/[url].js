@@ -44,7 +44,7 @@ const CameraFullDetails = ( {camera, addProductToCart} ) => {
                     <p className={styles.price}>${price}</p>
 
                     <form className={styles.formc} onSubmit={handleSubmit}>
-                        <label>Cantidad</label>
+                        <label>Qty</label>
                         <select
                             value={qtty}
                             onChange={ evt => setQtty(parseInt(evt.target.value))}
@@ -57,7 +57,7 @@ const CameraFullDetails = ( {camera, addProductToCart} ) => {
                         </select>
                         <input 
                             type="submit"
-                            value="Add al carrito"
+                            value="Add to Cart"
                         />
                     </form>
                 </div>
