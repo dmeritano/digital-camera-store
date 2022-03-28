@@ -59,10 +59,10 @@ Netlify CLI needs access to your GitHub account to configure Webhooks and Deploy
   * Authorize with GitHub through app.netlify.com
 
 Your build command (hugo build/yarn run build/etc):
-  * npm run build
+  * next build
 
 Directory to deploy (blank for current dir): 
-  * out
+  * .next
 
 Netlify functions folder
   * netlify/functions
