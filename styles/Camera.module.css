@@ -1,0 +1,82 @@
+.camera{
+    /*
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 1rem;
+    align-items: center;
+    */
+    padding: 5rem;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+.content{
+    padding: 1rem;
+}
+.content h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.summary{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+.price{
+    color: var(--primary);
+    font-size: 5rem;
+    font-weight: 900;
+    margin: 0;
+    text-align: center;
+}
+.link{
+    margin-top: 2rem;
+    display: block;
+    text-decoration: none;        
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--black);
+    border: 2px solid var(--primary);
+    padding: 1rem 5rem;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+.link:hover{
+    background-color: var(--primary);
+    color: var(--white)
+}
+.textContent{
+    white-space: pre-wrap;
+}
+
+.formc{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.formc label {
+    font-size: 2.2rem;
+}
+.formc select {
+    border: 2px solid var(--primary);
+    padding: 1rem;
+    text-align: center;
+}
+.formc input{
+    margin-top: 3rem;
+    display: block;
+    background-color: var(--primary);
+    text-transform: uppercase;
+    padding: 2rem;
+    border:none;
+    color: var(--white);
+    font-weight: 700;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+.formc input:hover{
+    background-color: var(--black);
+
+}

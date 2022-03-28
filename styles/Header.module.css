@@ -1,0 +1,66 @@
+.header {
+    background-image: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)), url('../public/img/header.jpg');
+    background-size: cover;
+    background-position: 50%;
+    padding: 1rem 5rem;
+}
+
+.topbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width:768px){
+    .topbar {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+.navigation{
+    margin-top: 5rem;
+    display: flex;
+    gap: 2rem;
+}
+@media (min-width:768px){
+    .navigation {
+        margin-top: 0;
+    }
+}
+
+.navigation a { /*Link*/
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1rem;
+    transition-property: background-color;
+    transition-duration: .2s;
+}
+.navigation a:hover {
+    background-color: var(--primary);
+}
+.headercamera{
+    color: var(--white);
+    padding-bottom: 5rem;
+}
+.headercamera h1 {
+    color:var(--primary);
+}
+.link{
+    text-decoration: none;        
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--white);
+    border: 2px solid var(--primary);
+    padding: 1rem 5rem;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+.link:hover{
+    background-color: var(--primary);
+    color: var(--white)
+}

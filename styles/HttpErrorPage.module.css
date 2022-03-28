@@ -1,0 +1,22 @@
+.pageNotFound{
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pageNotFound h1{
+    color: var(--black);
+    text-transform: uppercase;
+}
+.pageNotFound h1 span{
+    color: gray;
+    font-weight: lighter;
+    font-size: .8rem;
+}
+.pageNotFound a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 3rem;
+    margin: 0;
+}
