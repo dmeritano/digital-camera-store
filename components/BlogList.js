@@ -8,7 +8,7 @@ const BlogList = ( {entries}) => {
         <div className={styles.blog}>
             {entries.map(entry => (
               <Entry
-                key={entry.id}
+                key={entry._id}
                 entry={entry}              
               />
             ))}            

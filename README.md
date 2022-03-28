@@ -15,8 +15,6 @@ The backend project is here on Github, repository `digital-camera-store-backend`
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    ".........": "......",
-    ".........": "......"    
    }
 ```
 * Bootstrapped with *create-next-app*
@@ -33,4 +31,6 @@ The backend project is here on Github, repository `digital-camera-store-backend`
 
 * STRAPI_API_URL=backend_url_api
 
+
+## Deploying App on Netlify
 

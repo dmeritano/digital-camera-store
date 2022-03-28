@@ -27,9 +27,9 @@ function MyApp({ Component, pageProps }) {
 
   const addProductToCart = (product) => {
     
-    if (cartItems.some(item => item.id === product.id)){
+    if (cartItems.some(item => item._id === product._id)){
       const updatedCart = cartItems.map( item => {
-        if (item.id === product.id){
+        if (item._id === product._id){
           item.qtty = product.qtty
         }
         return item
@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }) {
   const updateQtty = (product) => {
     
     const updatedCart = cartItems.map( item => {
-      if (item.id === product.id){
+      if (item._id === product._id){
         item.qtty = product.qtty
       }
       return item
@@ -52,7 +52,7 @@ function MyApp({ Component, pageProps }) {
   }
 
   const deleteProduct = (id) => {
-    const updatedCart = cartItems.filter( item => item.id !== id)
+    const updatedCart = cartItems.filter( item => item._id !== id)
     setCartItems(updatedCart)
   }
 

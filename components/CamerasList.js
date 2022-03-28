@@ -6,7 +6,7 @@ const CamerasList = ( {cameras} ) => {
     <div className={styles.list}>
       {cameras.map( camera => (
         <Camera 
-          key={camera.id}
+          key={camera._id}
           camera={camera}
         />
       ))}

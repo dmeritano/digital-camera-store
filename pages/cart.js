@@ -24,7 +24,7 @@ const Cart = ( {cartItems, updateQtty, deleteProduct} ) => {
                   ):null}                                    
                   {cartItems.length === 0 ? null : (                    
                     cartItems.map( item => (
-                      <div key={item.id} className={styles.item}>
+                      <div key={item._id} className={styles.item}>
                         <div>
                           <Image layout="fixed" width={180} height={180} src={item.image} alt={`Image of ${item.name}`} />
                         </div>
@@ -37,7 +37,7 @@ const Cart = ( {cartItems, updateQtty, deleteProduct} ) => {
                               className={styles.select}
                               onChange={ (evt) => updateQtty({
                                 qtty:evt.target.value,
-                                id:item.id
+                                id:item._id
                               })}
                             >
                               <option value="1">1</option>
@@ -50,7 +50,7 @@ const Cart = ( {cartItems, updateQtty, deleteProduct} ) => {
                           <p className={styles.price}>$<span>{item.price}</span></p>
                           <p className={styles.subtotal}>Subtotal: $<span>{item.price * item.qtty}</span></p>
                         </div>
-                        <button type="button" className={styles.deletebtn} onClick={() => deleteProduct(item.id)}>X</button>
+                        <button type="button" className={styles.deletebtn} onClick={() => deleteProduct(item._id)}>X</button>
                       </div>                      
                     ))
                   )}
